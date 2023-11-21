@@ -43,7 +43,8 @@ nav {
 h3 {
   font-family: "Alumni", sans-serif;
   font-size: 24px;
-  color: #fff;
+  color: #fcffe7;
+  margin: 0;
   text-transform: uppercase;
 }
 .menu-list {
@@ -55,7 +56,7 @@ h3 {
 }
 .menu-links {
   text-decoration: none;
-  color: #fff;
+  color: #fcffe7;
   font-size: 16px;
   font-family: "Alumni", sans-serif;
   font-weight: 300;
@@ -82,11 +83,70 @@ h3 {
 .sidebar-open {
   display: none;
 }
-@media screen and (max-width:  767px) {
+.canvas-off {
+  width: 250px !important;
+  background-color: #bad7e9;
+  box-shadow: 5px 0px 25px #eb455f;
+}
+.side-logo {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  color: #2b3467;
+  font-family: "poppins", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.7rem;
+  font-weight: 700;
+}
+.sidebar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: red; */
+}
+.sidemenu {
+  /* padding: 0 50px; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.sidemenu li {
+  list-style: none;
+  padding: 12px 24px;
+  width: 100%;
+  transition: all 0.3s ease-out;
+}
+.sidemenu li:hover {
+  background-color: #eb455f;
+  cursor: pointer;
+}
+.side-links {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #2b3467;
+  font-size: 18px;
+  font-family: "poppins", sans-serif;
+  transition: all 0.3s ease-out;
+}
+.sidemenu li:hover .side-links {
+  color: #fcffe7;
+}
+@media screen and (max-width: 767px) {
   .menu-list {
     display: none;
   }
   .sidebar-open {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu-btn {
+    color: #eb455f;
+    font-size: 24px;
+    cursor: pointer;
   }
 }
