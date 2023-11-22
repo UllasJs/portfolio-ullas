@@ -19,22 +19,22 @@ export function Header() {
         <div>
           <ul className="menu-list">
             <li>
-              <Link className="menu-links" to="/">
+              <Link className="menu-links" to="portfolio-ullas/">
                 Home
               </Link>
             </li>
             <li>
-              <Link className="menu-links" to="/projects">
+              <Link className="menu-links" to="portfolio-ullas/projects">
                 Projects
               </Link>
             </li>
             <li>
-              <Link className="menu-links" to="/aboutme">
+              <Link className="menu-links" to="portfolio-ullas/aboutme">
                 About Me
               </Link>
             </li>
             <li>
-              <Link className="menu-links" to="/contact">
+              <Link className="menu-links" to="portfolio-ullas/contact">
                 Contact
               </Link>
             </li>
@@ -46,7 +46,7 @@ export function Header() {
               onClick={handleShow}
             />
             <Offcanvas className="canvas-off" show={show} onHide={handleClose}>
-              <Offcanvas.Header >
+              <Offcanvas.Header>
                 <Offcanvas.Title className="side-logo">
                   Ulla<span className="acsent-color">s</span>
                 </Offcanvas.Title>
@@ -55,22 +55,25 @@ export function Header() {
                 <div className="sidebar">
                   <ul className="sidemenu">
                     <li>
-                      <Link to="/" className="side-links">
+                      <Link to="portfolio-ullas/" className="side-links">
                         Home
                       </Link>
                     </li>
                     <li>
-                      <Link to="/projects" className="side-links">
+                      <Link
+                        to="portfolio-ullas/projects"
+                        className="side-links"
+                      >
                         Projects
                       </Link>
                     </li>
                     <li>
-                      <Link to="/aboutme" className="side-links">
+                      <Link to="portfolio-ullas/aboutme" className="side-links">
                         About Me
                       </Link>
                     </li>
                     <li>
-                      <Link to="/contact" className="side-links">
+                      <Link to="portfolio-ullas/contact" className="side-links">
                         Contacts
                       </Link>
                     </li>
