@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import { Header } from "./components/header";
 import Home from "./pages/home";
 
@@ -14,7 +14,7 @@ function App() {
           </div>
           <div>
             <Routes>
-              <Route path="/" element={<Home />}></Route>
+              <Route path="/portfolio-ullas" element={<Home />}></Route>
             </Routes>
           </div>
         </div>

@@ -19,22 +19,22 @@ export function Header() {
         <div>
           <ul className="menu-list">
             <li>
-              <Link className="menu-links" to="portfolio-ullas/">
+              <Link className="menu-links" to="/portfolio-ullas">
                 Home
               </Link>
             </li>
             <li>
-              <Link className="menu-links" to="portfolio-ullas/projects">
+              <Link className="menu-links" to="/projects">
                 Projects
               </Link>
             </li>
             <li>
-              <Link className="menu-links" to="portfolio-ullas/aboutme">
+              <Link className="menu-links" to="/aboutme">
                 About Me
               </Link>
             </li>
             <li>
-              <Link className="menu-links" to="portfolio-ullas/contact">
+              <Link className="menu-links" to="/contact">
                 Contact
               </Link>
             </li>
@@ -55,25 +55,22 @@ export function Header() {
                 <div className="sidebar">
                   <ul className="sidemenu">
                     <li>
-                      <Link to="portfolio-ullas/" className="side-links">
+                      <Link to="/portfolio-ullas" className="side-links">
                         Home
                       </Link>
                     </li>
                     <li>
-                      <Link
-                        to="portfolio-ullas/projects"
-                        className="side-links"
-                      >
+                      <Link to="/projects" className="side-links">
                         Projects
                       </Link>
                     </li>
                     <li>
-                      <Link to="portfolio-ullas/aboutme" className="side-links">
+                      <Link to="/aboutme" className="side-links">
                         About Me
                       </Link>
                     </li>
                     <li>
-                      <Link to="portfolio-ullas/contact" className="side-links">
+                      <Link to="/contact" className="side-links">
                         Contacts
                       </Link>
                     </li>
