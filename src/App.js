@@ -10,7 +10,7 @@ import { Contact } from "./pages/contact";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="/portfolio-ullas">
         <div className="auto-container">
           <div>
             <Header />
