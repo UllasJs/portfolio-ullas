@@ -19,7 +19,7 @@ export function Header() {
         <div>
           <ul className="menu-list">
             <li>
-              <Link className="menu-links" to="/portfolio-ullas">
+              <Link className="menu-links" to="/">
                 Home
               </Link>
             </li>
@@ -55,7 +55,7 @@ export function Header() {
                 <div className="sidebar">
                   <ul className="sidemenu">
                     <li>
-                      <Link to="/portfolio-ullas" className="side-links">
+                      <Link to="/" className="side-links">
                         Home
                       </Link>
                     </li>

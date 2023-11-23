@@ -1,0 +1,9 @@
+.homePage {
+  width: 100%;
+}
+.homePage h1 {
+  font-weight: 900;
+  font-size: 100px;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
