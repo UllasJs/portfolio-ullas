@@ -18,3 +18,72 @@
   justify-content: space-between;
   align-items: center;
 }
+.home-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+}
+.text-col {
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+.profile-pic {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0px 0px 50px rgba(186, 215, 233, 0.5);
+}
+
+img {
+  position: absolute;
+  top: -40px;
+  left: 0px;
+  width: 300px;
+  height: auto;
+}
+.main-text {
+  text-transform: uppercase;
+}
+.text-span-primary {
+  color: #eb455f;
+}
+.text-col h1 {
+  font-size: 42px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.3rem;
+  font-weight: 900;
+  color: #fcffe7;
+}
+.text-col h4 {
+  font-size: 28px;
+  color: #fcffe7;
+  font-weight: 200;
+  font-family: "Poppins", sans-serif;
+}
+.about-link {
+  text-decoration: none;
+  color: #eb455f;
+  padding: 10px 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  border-radius: 20px;
+  background-color: #fcffe7;
+  box-shadow: 1px 3px 15px rgba(186, 215, 233, 1);
+  transition: all 0.3s ease;
+}
+.about-icon {
+  margin-left: 10px;
+  font-size: 24px;
+}
+
+.about-link:hover {
+  color: #fcffe7;
+  background-color: #eb455f;
+  transform: scale(1.04);
+}
