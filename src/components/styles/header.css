@@ -44,9 +44,18 @@
   left: 0;
   background-color: #bad7e9;
 }
-.header.scrolled h3,
+.header.scrolled h3 {
+  color: #000;
+  cursor: pointer;
+}
 .header.scrolled .menu-links {
   color: black;
+  font-family: 'poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+.header.scrolled .menu-links:hover {
+  color: #eb455f;
 }
 .menu-div {
   display: flex;
@@ -60,7 +69,8 @@ nav {
   align-items: center;
 }
 h3 {
-  font-family: "Alumni", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
   font-size: 32px;
   color: #fcffe7;
   margin: 0;
@@ -78,8 +88,8 @@ h3 {
   text-decoration: none;
   color: #fcffe7;
   font-size: 20px;
-  font-family: "Alumni", sans-serif;
-  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
   transition: color 0.3s ease-in-out;
 }
 .menu-links:hover {
@@ -113,10 +123,10 @@ h3 {
   text-align: center;
   font-size: 30px;
   color: #2b3467;
-  font-family: "poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.7rem;
-  font-weight: 700;
+  font-weight: 900;
 }
 .sidebar {
   width: 100%;
@@ -149,7 +159,8 @@ h3 {
   text-decoration: none;
   color: #2b3467;
   font-size: 18px;
-  font-family: "poppins", sans-serif;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
   transition: all 0.3s ease-out;
 }
 .sidemenu li:hover .side-links {
