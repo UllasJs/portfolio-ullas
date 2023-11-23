@@ -3,20 +3,39 @@ import "./styles/header.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { CgMenuGridO } from "react-icons/cg";
 import Offcanvas from "react-bootstrap/Offcanvas";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export function Header() {
+  const [isScrolled, setScolled] = useState(false);
   const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollpos = window.scrollY;
+      if (scrollpos > 0) {
+        setScolled(true);
+      } else {
+        setScolled(false);
+      }
+    };
+    // Attach the event listener when the component mounts
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
-    <div className="header">
+    <div className={isScrolled ? "header scrolled auto-container" : "header auto-container"}>
       <nav>
         <h3>
           Ulla<span className="acsent-color">s</span>
         </h3>
-        <div>
+        <div className="menu-div">
           <ul className="menu-list">
             <li>
               <Link className="menu-links" to="/">
