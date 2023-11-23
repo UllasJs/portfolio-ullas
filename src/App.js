@@ -3,6 +3,9 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Header } from "./components/header";
 import Home from "./pages/home";
+import { Projects } from "./pages/projects";
+import { About } from "./pages/about";
+import { Contact } from "./pages/contact";
 
 function App() {
   return (
@@ -14,7 +17,10 @@ function App() {
           </div>
           <div>
             <Routes>
-              <Route path="/portfolio-ullas" element={<Home />}></Route>
+              <Route path="/" element={<Home />}></Route>
+              <Route path="/projects" element={<Projects />}></Route>
+              <Route path="/aboutme" element={<About />}></Route>
+              <Route path="/contact" element={<Contact />}></Route>
             </Routes>
           </div>
         </div>
