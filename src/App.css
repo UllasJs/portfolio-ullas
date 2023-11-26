@@ -1,23 +1,53 @@
 .App {
   width: 100%;
-  height: 200vh; 
-  background-color: #2b3467;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: center; */
+  height: 200vh;
+  background-color: var(--primary-color);
+  /* display: flex; 
+  justify-content: flex-start;
+  align-items: center; */
 }
 .acsent-color {
-  color: #eb455f;
+  color: var(--acsent-color);
 }
 .auto-container {
   padding: 0 226px;
+  transition: all 0.3s ease-in-out;
 }
 
 /* Large desktop */
 @media (max-width: 1200px) {
   .auto-container {
-    padding: 0 150px;
+    padding: 0 120px;
   }
+}
+
+.WhatsappMe {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--acsent-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.WhatsappMe:hover {
+  background-color: var(--secondary-color);
+}
+.WhatsappMe:hover .whatsapp-btn {
+  color: var(--acsent-color);
+}
+.whatsapp-btn {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Portrait tablet to landscape and desktop */
@@ -37,6 +67,6 @@
 /* Landscape phones and down */
 @media (max-width: 480px) {
   .auto-container {
-    padding: 0 10px;
+    padding: 0 20px;
   }
 }

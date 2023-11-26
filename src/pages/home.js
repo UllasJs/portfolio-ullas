@@ -10,8 +10,8 @@ function Home() {
         <div className="home-row">
           <div className="home-col text-col">
             <h1>
-              It's Me <br />
-              <span className="text-span-primary main-text">Ullas </span> JS
+              <div>It's Me</div>
+              <span className="text-span-primary main-text">Ullas JS</span>
             </h1>
             <h4>
               I'm Into

@@ -32,49 +32,51 @@
 }
 .profile-pic {
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   overflow: hidden;
   border-radius: 50%;
-  box-shadow: 0px 0px 50px rgba(186, 215, 233, 0.5);
+  box-shadow: 0px 0px 50px var(--light-box-shadow);
+  transition: all 0.3s ease-in;
 }
 
 img {
   position: absolute;
-  top: -40px;
-  left: 0px;
-  width: 300px;
+  top: -60px;
+  left: -5px;
+  width: 360px;
   height: auto;
+  transition: all 0.3s ease-in;
 }
 .main-text {
   text-transform: uppercase;
 }
 .text-span-primary {
-  color: #eb455f;
+  color: var(--acsent-color);
 }
 .text-col h1 {
   font-size: 42px;
   font-family: "Poppins", sans-serif;
   letter-spacing: 0.3rem;
   font-weight: 900;
-  color: #fcffe7;
+  color: var(--text-colors);
 }
 .text-col h4 {
   font-size: 28px;
-  color: #fcffe7;
+  color: var(--text-colors);
   font-weight: 200;
   font-family: "Poppins", sans-serif;
 }
 .about-link {
   text-decoration: none;
-  color: #eb455f;
+  color: var(--acsent-color);
   padding: 10px 20px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 20px;
   border-radius: 20px;
-  background-color: #fcffe7;
-  box-shadow: 1px 3px 15px rgba(186, 215, 233, 1);
+  background-color: var(--text-colors);
+  box-shadow: 1px 3px 15px var(--light-box-shadow);
   transition: all 0.3s ease;
 }
 .about-icon {
@@ -83,7 +85,63 @@ img {
 }
 
 .about-link:hover {
-  color: #fcffe7;
-  background-color: #eb455f;
+  color: var(--text-colors);
+  background-color: var(--acsent-color);
   transform: scale(1.04);
+}
+
+@media screen and (max-width: 1280px) {
+  .profile-pic {
+    width: 250px;
+    height: 250px;
+  }
+  .profile-pic img {
+    width: 260px;
+    height: auto;
+    left: 0px;
+  }
+}
+
+@media screen and (max-width: 640px)  {
+  .home-row {
+    margin-top: 100px;
+    flex-direction: column-reverse;
+  }
+  .home-col {
+    width: auto;
+    height: 280px;
+  }
+  .text-col h1 {
+    margin-left: 40px;
+  }
+  .text-col h4 {
+    margin-left: 40px;
+    font-size: 24px;
+    text-wrap: nowrap;
+  }
+  .text-col .about-link {
+    font-size: 16px;
+    margin-left: 40px;
+  }
+  .text-col .about-link > span {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .text-col h1 {
+    margin: 0;
+  }
+  .text-col h4 {
+    margin: 0;
+    font-size: 20px;
+    text-wrap: nowrap;
+  }
+  .text-col .about-link {
+    font-size: 16px;
+    margin: 0;
+  }
+  .text-col .about-link > span {
+    font-size: 16px;
+  }
 }
