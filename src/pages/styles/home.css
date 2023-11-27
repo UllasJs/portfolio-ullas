@@ -17,13 +17,14 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
 }
 .home-col {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 400px;
+  width: 380px;
   height: 400px;
 }
 .text-col {
@@ -50,23 +51,67 @@ img {
 }
 .main-text {
   text-transform: uppercase;
+  text-wrap: nowrap;
 }
 .text-span-primary {
   color: var(--acsent-color);
+  /* display: none; */
 }
-.text-col h1 {
-  font-size: 42px;
+.text-span-primary.active .text-col h1 {
+  font-size: 62px;
   font-family: "Poppins", sans-serif;
   letter-spacing: 0.3rem;
   font-weight: 900;
   color: var(--text-colors);
 }
+h1 span {
+  font-size: 52px;
+  transition: all 0.3s ease;
+}
 .text-col h4 {
   font-size: 28px;
   color: var(--text-colors);
-  font-weight: 200;
+  font-weight: 300;
+  text-transform: capitalize;
   font-family: "Poppins", sans-serif;
+  position: relative;
+  text-wrap: nowrap;
 }
+
+@keyframes text-type {
+  40%,
+  60% {
+    left: 100%;
+    width: 0%;
+  }
+  100% {
+    left: 0%;
+    width: 100%;
+  }
+}
+
+.changeDev {
+  /* display: none; */
+  color: var(--acsent-color);
+  text-wrap: nowrap;
+  margin-left: 10px;
+  position: relative;
+  overflow: hidden;
+  padding-right: 5px;
+  width: 100px;
+}
+.changeDev::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--primary-color);
+  border-left: 2px solid var(--acsent-color);
+  animation: text-type 4s steps(120) infinite;
+}
+
 .about-link {
   text-decoration: none;
   color: var(--acsent-color);
@@ -100,9 +145,16 @@ img {
     height: auto;
     left: 0px;
   }
+  h1 span {
+    font-size: 32px;
+  }
+  h4,
+  h4 span {
+    font-size: 24px;
+  }
 }
 
-@media screen and (max-width: 640px)  {
+@media screen and (max-width: 640px) {
   .home-row {
     margin-top: 100px;
     flex-direction: column-reverse;
@@ -116,7 +168,7 @@ img {
   }
   .text-col h4 {
     margin-left: 40px;
-    font-size: 24px;
+    font-size: 20px;
     text-wrap: nowrap;
   }
   .text-col .about-link {
@@ -136,6 +188,16 @@ img {
     margin: 0;
     font-size: 20px;
     text-wrap: nowrap;
+  }
+  h1 span {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 20px;
+    text-wrap: wrap;
+  }
+  .changeDev {
+    font-size: 20px;
   }
   .text-col .about-link {
     font-size: 16px;

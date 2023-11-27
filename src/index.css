@@ -13,9 +13,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 :root {
-  --primary-color: #2B3467;
-  --secondary-color: #BAD7E9;
-  --acsent-color: #EB455F;
-  --text-colors: #FCFFE7;
-  --light-box-shadow: #BAD7E9;
+  --primary-color: #EFFFFB;
+  --secondary-color: #50D890;
+  --acsent-color: #4F98CA;
+  --text-colors: #272727;
+  --light-box-shadow: #4F98CA;
 }
