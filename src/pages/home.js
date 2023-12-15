@@ -1,7 +1,7 @@
 import "./styles/home.css";
 import Portrait from "../assets/IMG-20230129-WA0004.jpg";
 import { BsArrowRightCircleFill } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import { Link, useHref } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 function Home() {
@@ -74,6 +74,70 @@ function Home() {
               <img src={Portrait} alt="" />
             </div>
           </div>
+        </div>
+      </section>
+      <section className="project-section">
+        <div className="projectbody">
+          <ul className="projectslist">
+            <li
+              onClick={() =>
+                (window.location.href =
+                  "https://ninjaullas.github.io/Flappy_bird/")
+              }
+            >
+              <a href="https://ninjaullas.github.io/Flappy_bird/">
+                Flappy bird Game
+              </a>
+            </li>
+            <li
+              onClick={() =>
+                (window.location.href =
+                  "https://ninjaullas.github.io/ImageSearch/")
+              }
+            >
+              <a href="https://ninjaullas.github.io/ImageSearch/">
+                Image search Engine
+              </a>
+            </li>
+            <li
+              onClick={() =>
+                (window.location.href =
+                  "https://ninjaullas.github.io/weatherApp/")
+              }
+            >
+              <a href="https://ninjaullas.github.io/weatherApp/">Weather App</a>
+            </li>
+            <li
+              onClick={() =>
+                (window.location.href =
+                  "https://ninjaullas.github.io/ScipyTechnologies/")
+              }
+            >
+              <a href="https://ninjaullas.github.io/ScipyTechnologies/">
+                A Company Website
+              </a>
+            </li>
+            <li
+              onClick={() =>
+                (window.location.href =
+                  "https://github.com/NinjaUllas/NotePadz")
+              }
+            >
+              <a href="https://github.com/NinjaUllas/NotePadz">
+                React Native Note App
+              </a>
+            </li>
+            <li
+              onClick={() =>
+                (window.location.href =
+                  "https://github.com/NinjaUllas/fluttertestapp")
+              }
+            >
+              <a href="https://github.com/NinjaUllas/fluttertestapp">
+                A Simple Flutter App (with Dark mode)
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
     </div>
