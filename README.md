@@ -10,6 +10,6 @@ Key Features:
 ⚡️ Cutting-edge Technologies
 Feel free to explore the code, check out live demos, and get in touch. Let's connect and build something amazing together!
 
-🔗 Visit My Portfolio : https://ninjaullas.github.io/portfolio-ullas/
+🔗 Visit My Portfolio : https://ullasjs.github.io/portfolio-ullas/
 
 
