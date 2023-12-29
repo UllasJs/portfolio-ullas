@@ -1,16 +1,16 @@
 import "./styles/home.css";
 import Portrait from "../assets/IMG-20230129-WA0004.jpg";
 import { BsArrowRightCircleFill } from "react-icons/bs";
-import { Link, useHref } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { useState, useEffect, useMemo } from "react";
 
 function Home() {
   const [currentText, setCurrentText] = useState("");
-  const texts = [
+  const texts = useMemo(() => [
     "Front End Development",
     "Back End Development",
     "Mern Stack Development",
-  ];
+  ], []);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -40,7 +40,7 @@ function Home() {
         onAnimationIteration
       );
     };
-  }, [currentIndex]);
+  }, [currentIndex, texts]);
 
   return (
     <div className="homePage">
