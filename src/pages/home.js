@@ -76,6 +76,9 @@ function Home() {
           </div>
         </div>
       </section>
+      <section className="projects__sect">
+        
+      </section>
     </div>
   );
 }
